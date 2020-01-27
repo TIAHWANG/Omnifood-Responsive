@@ -8,10 +8,7 @@
       content="Omnifood is a premium food delivery service
       with the mission to bring affordable and healthy meals to as many people as possible."
     />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Open Graph -->
     <!-- http://ogp.me/ -->
@@ -60,8 +57,12 @@
     <!-- HEADER -->
     <header>
       <nav>
-        <div class="container">
-          <img src="img/logo-white.png" alt="Omifood Logo" />
+        <div class="header__nav">
+          <img
+            src="img/logo-white.png"
+            alt="Omifood Logo"
+            class="header__logo"
+          />
           <ul class="header__menu">
             <li><a href="#">Food delivery</a></li>
             <li><a href="#">How it works</a></li>
@@ -70,6 +71,11 @@
           </ul>
         </div>
       </nav>
+      <div class="header__title">
+        <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
+        <a class="btn" href="#">I'm hungry</a>
+        <a class="btn" href="#">Show me more</a>
+      </div>
     </header>
   </body>
 </html>
