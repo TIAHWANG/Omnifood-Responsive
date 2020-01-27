@@ -56,13 +56,11 @@
   <body>
     <!-- HEADER -->
     <header>
-      <nav>
+      <div class="inner">
         <div class="header__nav">
-          <img
-            src="img/logo-white.png"
-            alt="Omifood Logo"
-            class="header__logo"
-          />
+          <div class="logo">
+            <a href="#">Omnifood</a>
+          </div>
           <ul class="header__menu">
             <li><a href="#">Food delivery</a></li>
             <li><a href="#">How it works</a></li>
@@ -70,11 +68,13 @@
             <li><a href="#">sign up</a></li>
           </ul>
         </div>
-      </nav>
-      <div class="header__title">
-        <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
-        <a class="btn" href="#">I'm hungry</a>
-        <a class="btn" href="#">Show me more</a>
+        <div class="header__title">
+          <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
+          <div class="btn-group">
+            <a href="#" class="btn btn-full">I'm hungry</a>
+            <a href="#" class="btn btn-empty">Show me more</a>
+          </div>
+        </div>
       </div>
     </header>
   </body>

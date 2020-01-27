@@ -1,57 +1,94 @@
+/* COMMON */
 * {
   box-sizing: border-box;
 }
-
 body {
   background-color: #fff;
   color: #555;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
-  overflow-x: hidden;
 }
-
-a:link,
-a:visited,
-a:hover,
-a:active {
+a {
   text-decoration: none;
-  color: white;
-  /* fix it later */
+  cursor: pointer;
 }
 
-/* ----- HEADER ----- */
+/* BUTTONS */
+.btn {
+  height: 50px;
+  background: #e67e22;
+  border: 1px solid #e67e22;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 35px;
+  font-size: 110%;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+.btn.btn-full {
+  margin-right: 20px;
+}
+.btn.btn-full:hover {
+  background-color: #e66e22;
+}
+.btn.btn-empty {
+  background: none;
+  color: #e67e22;
+}
+.btn.btn-empty:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+/* HEADER */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
 }
-
-.header__nav {
+header .inner {
   max-width: 1140px;
   margin: 0 auto;
+  height: 100vh;
+}
+header .header__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 20%;
 }
-
-.header__logo {
+header .logo a {
+  background: url("../img/logo-white.png");
+  background-size: cover;
+  width: 100px;
   height: 100px;
-  margin-top: 20px;
+  display: block;
+  text-indent: -9999px;
+  transition: border 0.2s;
 }
-
-.header__menu {
+header .logo a:hover {
+  border: 3px solid #e67e22;
+  border-radius: 50%;
+}
+header .header__menu {
   display: flex;
 }
-
-.header__menu li {
-  margin: 60px 20px;
-  font-size: 90%;
+header .header__menu li a {
+  margin: 0 20px;
   text-transform: uppercase;
+  font-size: 90%;
+  color: #fff;
 }
-
-.header__title {
+header .header__menu li a:hover {
+  border-bottom: 2px solid #e67e22;
+  padding-bottom: 10px;
+}
+header .header__title {
   width: 1140px;
   position: absolute;
   top: 50%;
@@ -59,9 +96,11 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.header__title h1 {
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 250%;
+header .header__title h1 {
   text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 250%;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1px;
 }
