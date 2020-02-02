@@ -15,7 +15,8 @@ a {
 }
 
 /* BUTTONS */
-.btn {
+.btn,
+input[type="submit"] {
   height: 50px;
   background: #e67e22;
   border: 1px solid #e67e22;
@@ -29,10 +30,12 @@ a {
   color: #fff;
   position: relative;
 }
-.btn.btn-full {
+.btn.btn-full,
+input[type="submit"] {
   margin-right: 20px;
 }
-.btn.btn-full:hover {
+.btn.btn-full:hover,
+input[type="submit"]:hover {
   background-color: #e66e22;
 }
 .btn.btn-empty {
@@ -303,4 +306,109 @@ header .header__title {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/* SECTION-PLANS */
+.section--plans {
+  background: #f4f4f4;
+}
+.section--plans .plans {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+.section--plans .plan-box {
+  background: #fff;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px #efefef;
+}
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:first-child {
+  background: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.plan-box div:last-child {
+  text-align: center;
+}
+.plan-box .plan-price {
+  font-size: 270%;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+.plan-box ul li {
+  margin-bottom: 15px;
+}
+.plan-box ul li i {
+  margin-right: 15px;
+  font-size: 80%;
+  color: #e67e22;
+}
+
+/* SECTION-FORM */
+.section--form .form-box {
+  margin: 40px 0;
+}
+.form-box div {
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 90%;
+}
+.form-box .input-title,
+.form-box .input,
+.form-box .check {
+  margin-left: 0;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 90%;
+}
+textarea {
+  height: 100px;
+}
+.form-box > .form > div:last-child {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+*:focus {
+  outline: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  padding: 40px 50px;
+  font-size: 80%;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav ul {
+  display: flex;
+}
+.footer-nav ul li {
+  margin-left: 10px;
+}
+.footer-nav ul li a {
+  color: #888;
+}
+.footer-nav ul li a i {
+  font-size: 130%;
+}
+.footer-nav ul li a:hover {
+  text-decoration: underline;
 }
