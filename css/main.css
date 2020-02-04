@@ -139,6 +139,20 @@ header .header__title {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#toggle-btn {
+  display: none;
+}
+#toggle-btn i {
+  font-size: 33px;
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  cursor: pointer;
+}
+#toggle-btn i:hover {
+  color: #e67e22;
+}
 
 /* SECTION-FEATURES */
 .features__title {

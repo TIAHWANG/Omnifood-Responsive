@@ -58,17 +58,18 @@
     <!-- CSS links -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Omnifood</title>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="section">
       <div class="inner">
         <div class="header__nav">
           <div class="logo">
             <a href="#">Omnifood</a>
           </div>
-          <ul class="header__menu">
+          <ul class="header__menu toggle">
             <li><a href="#">Food delivery</a></li>
             <li><a href="#">How it works</a></li>
             <li><a href="#">our cities</a></li>
@@ -82,6 +83,7 @@
             <a href="#" class="btn btn-empty">Show me more</a>
           </div>
         </div>
+        <div id="toggle-btn"><i class="fas fa-bars"></i></div>
       </div>
     </header>
     <!--SECTION-FEATURE -->
@@ -505,5 +507,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
