@@ -11,7 +11,6 @@ body {
 }
 a {
   text-decoration: none;
-  cursor: pointer;
 }
 
 /* BUTTONS */
@@ -86,7 +85,7 @@ h2::after {
 }
 h3 {
   margin: 20px 0px;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 /* HEADER */
@@ -106,18 +105,13 @@ header .header__nav {
   align-items: center;
   height: 20%;
 }
-header .logo a {
+header .logo {
   background: url("../img/logo-white.png");
   background-size: cover;
   width: 100px;
   height: 100px;
   display: block;
   text-indent: -9999px;
-  transition: border 0.2s;
-}
-header .logo a:hover {
-  border: 3px solid #e67e22;
-  border-radius: 50%;
 }
 header .header__menu {
   display: flex;
@@ -143,7 +137,7 @@ header .header__title {
   display: none;
 }
 #toggle-btn i {
-  font-size: 33px;
+  font-size: 28px;
   color: #fff;
   position: absolute;
   top: 50px;
@@ -169,12 +163,12 @@ header .header__title {
 .detail__contents {
   width: 25%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
   text-align: center;
 }
 .detail__contents i {
   color: #e67e22;
-  font-size: 250%;
+  font-size: 200%;
 }
 .detail__contents p {
   font-size: 90%;
@@ -186,23 +180,20 @@ header .header__title {
   padding: 0;
 }
 .meals-gallery {
-  display: flex;
   width: 100%;
+  display: flex;
 }
 .meals-gallery li {
-  display: block;
   width: 25%;
 }
 .meal-photo {
   width: 100%;
-  margin: 0;
   overflow: hidden;
-  background-color: #000;
 }
 .meal-photo img {
+  display: block;
   opacity: 0.7;
   width: 100%;
-  height: auto;
   transition: transform 0.5s, opacity 0.5s;
 }
 .meal-photo img:hover {
@@ -333,7 +324,7 @@ header .header__title {
 }
 .section--plans .plan-box {
   background: #fff;
-  width: 350px;
+  width: 330px;
   border-radius: 5px;
   box-shadow: 0 3px 5px #efefef;
 }
@@ -350,9 +341,14 @@ header .header__title {
   text-align: center;
 }
 .plan-box .plan-price {
-  font-size: 270%;
+  font-size: 280%;
   color: #e67e22;
+  font-weight: 100;
   margin-bottom: 20px;
+}
+.plan-price span {
+  font-size: 40%;
+  font-weight: 300;
 }
 .plan-box ul li {
   margin-bottom: 15px;
@@ -368,8 +364,8 @@ header .header__title {
   margin: 40px 0;
 }
 .form-box div {
-  width: 50%;
-  margin-left: 25%;
+  width: 70%;
+  margin-left: 15%;
   display: flex;
   margin-bottom: 10px;
   font-size: 90%;
