@@ -1,26 +1,32 @@
+const header = document.querySelector(".header__nav");
+const sticky = header.offsetTop;
+const arrowBtn = document.querySelector(".arrow");
 const toggle = document.querySelector(".toggle");
 const toggleBtn = document.getElementById("toggle-btn");
 
-toggleBtn.addEventListener("click", function() {
+function handleToggle() {
+  if (window.pageYOffset < 750) {
     toggle.classList.toggle("on");
-});
+  } else {
+    header.classList.toggle("active");
+    toggle.classList.toggle("on");
+  }
+}
 
-window.addEventListener("resize", function() {
-    if (window.innerWidth > 768) {
-        toggle.classList.remove("on");
-    }
-});
+function handleSticky() {
+  if (window.pageYOffset > sticky + 750) {
+    header.classList.add("sticky");
+    arrowBtn.classList.add("show");
+    arrowBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  } else {
+    header.classList.remove("sticky");
+    arrowBtn.classList.remove("show");
+  }
+}
 
-// sticky nav bar
-window.onscroll = function() {
-    const navbar = document.querySelector(".header__nav");
-
-    if (window.pageYOffset >= 780) {
-        navbar.classList.add("sticky");
-        toggleBtn.addEventListener("click", () => {
-            navbar.classList.toggle("active");
-        });
-    } else {
-        navbar.classList.remove("sticky");
-    }
+window.onscroll = () => {
+  handleSticky();
+  toggleBtn.addEventListener("click", handleToggle);
 };
