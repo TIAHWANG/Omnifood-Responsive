@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
 }
 html {
   scroll-behavior: smooth;
@@ -127,7 +128,7 @@ header .inner {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 20%;
+  height: 130px;
 }
 header .logo {
   background: url("../img/logo-white.png");
@@ -140,7 +141,7 @@ header .logo {
 header .logo-black {
   height: 50px;
   width: 50px;
-  margin: 5px 0;
+  margin: 1% 0;
   display: none;
 }
 
@@ -218,7 +219,7 @@ header .arrow.show {
   }
 }
 .active {
-  height: 18%;
+  height: 130px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -246,7 +247,7 @@ header .arrow.show {
 }
 .header__nav.sticky #toggle-btn i {
   color: #555;
-  top: 20px;
+  top: 27px;
 }
 
 /* TOGGLE */
@@ -376,7 +377,7 @@ header .arrow.show {
 }
 .contents__steps .steps p {
   width: 80%;
-  margin-left: 25px;
+  margin-left: 5%;
   line-height: 1.5;
 }
 .btn-app img {

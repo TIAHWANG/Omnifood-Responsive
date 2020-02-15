@@ -94,6 +94,7 @@
   }
   .btn-app img {
     margin-top: 10px;
+    height: 30px;
   }
   .reviews__list blockquote {
     margin-top: 40px;
@@ -105,8 +106,24 @@
 }
 
 @media only screen and (max-width: 501px) {
+  body {
+    font-size: 14px;
+  }
   section {
     padding: 25px 0;
+  }
+  header .logo {
+    width: 55px;
+    height: 55px;
+  }
+  .btn,
+  input[type="submit"] {
+    height: 40px;
+    padding: 0 25px;
+  }
+  .btn.btn-full,
+  input[type="submit"] {
+    margin-right: 10px;
   }
   .features__details {
     display: block;
@@ -114,6 +131,18 @@
   .detail__contents {
     width: 100%;
     margin-top: 5%;
+  }
+  .contents__steps .steps div {
+    width: 30px;
+    height: 30px;
+    font-size: 90%;
+    padding: 7px 0;
+  }
+  .contents__steps .steps p {
+    width: 75%;
+  }
+  .btn-app img {
+    height: 20px;
   }
   .contact-form {
     width: 100%;
