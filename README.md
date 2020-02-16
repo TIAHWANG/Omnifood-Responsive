@@ -10,3 +10,9 @@ URL: https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5
 
 1. All sources used in this website are from the course written in above. <br>
 2. Make same website but different <code>CSS</code> and <code>JS</code> used <br>
+
+## Checklist
+
+- [x] HTML Validation
+- [x] CSS Validation
+- [ ] Cross Browsing
